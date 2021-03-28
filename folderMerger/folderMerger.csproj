@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\Folder1\" />
+    <Folder Include="wwwroot\Folder2\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\Folder1\sample %281%29.pdf" />
+    <None Include="wwwroot\Folder2\sample %281%29.pdf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="itext7" Version="7.1.14" />
+    <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="2.2.0" />
+  </ItemGroup>
+
+</Project>
